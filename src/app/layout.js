@@ -1,0 +1,27 @@
+import './globals.css';
+
+export const metadata = {
+  title: 'School Transport Services',
+  description: 'School Transport Services',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head>
+        <form
+          name="interested_driver"
+          netlify
+          netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="text" name="first-name" />
+          <input type="text" name="last-name" />
+          <input type="email" name="email" />
+          <input type="tel" name="phone" />
+        </form>
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
