@@ -8,7 +8,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head></head>
+      <form
+        name="contact"
+        netlify
+        netlify-honeypot="bot-field"
+        hidden
+      >
+        <input type="text" name="first-name" />
+        <input type="text" name="last-name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+      </form>
       <body>{children}</body>
     </html>
   );
