@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       <head></head>
       <body>
         <form
-          name="interested_driver"
+          name="contact"
           netlify
           netlify-honeypot="bot-field"
           hidden
