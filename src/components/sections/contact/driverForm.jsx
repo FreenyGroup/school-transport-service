@@ -76,7 +76,6 @@ export default function DriverForm() {
             <FaEnvelope />
           </label>
         </div>
-
         <div className="relative mt-5">
           <Input
             type={'tel'}
@@ -98,6 +97,7 @@ export default function DriverForm() {
         <Button
           variant="pill"
           className="w-full bg-primary border-primary hover:text-primary-foreground lg:mt-10 mt-5"
+          type="submit"
         >
           Send Now
         </Button>
