@@ -12,13 +12,28 @@ import SectionName from '@/components/ui/sectionName';
 import Title from '@/components/ui/title';
 
 export default function DriverForm() {
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams(formData).toString(),
+    });
+    // Success and error handling ...
+  };
   return (
     <div className="bg-background shadow-[0px_5px_60px_0px_rgba(0,0,0,0.05)] rounded-[10px] lg:p-10 p-5">
       <h3 className="text-[28px] font-bold leading-[148%] font-nunito">
         Send A message
       </h3>
-      <form name="contact2" method="post" className="mt-7">
-        <input type="hidden" name="form-name" value="contact2" />
+      <form
+        name="contact2"
+        onSubmit={handleFormSubmit}
+        className="mt-7"
+      >
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
           <div className="relative">
             <Input
