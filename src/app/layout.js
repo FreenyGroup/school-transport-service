@@ -8,7 +8,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <head></head>
+      <body>
         <form
           name="interested_driver"
           netlify
@@ -20,8 +21,8 @@ export default function RootLayout({ children }) {
           <input type="email" name="email" />
           <input type="tel" name="phone" />
         </form>
-      </head>
-      <body>{children}</body>
+        {children}
+      </body>
     </html>
   );
 }

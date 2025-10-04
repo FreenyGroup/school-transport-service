@@ -17,7 +17,7 @@ export default function DriverForm() {
       <h3 className="text-[28px] font-bold leading-[148%] font-nunito">
         Send A message
       </h3>
-      <form name="interested_driver" method="post" className="mt-7">
+      <form name="contact" method="post" className="mt-7">
         <input
           type="hidden"
           name="form-name"
