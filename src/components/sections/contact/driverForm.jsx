@@ -41,14 +41,14 @@ export default function DriverForm() {
             <Input
               type={'text'}
               placeholder={'First Name'}
-              name="first-name"
-              id="first_name"
+              name={'first_name'}
+              id={'first_name'}
               className={
                 'text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5'
               }
             />
             <label
-              htmlFor="first_Name"
+              htmlFor="first_name"
               className="absolute right-5 top-1/2 -translate-y-1/2"
             >
               {' '}
@@ -58,14 +58,14 @@ export default function DriverForm() {
             <Input
               type={'text'}
               placeholder={'Last Name'}
-              name="last-name"
-              id="last_name"
+              name={'last_name'}
+              id={'last_name'}
               className={
                 'text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5'
               }
             />
             <label
-              htmlFor="last_Name"
+              htmlFor="last_name"
               className="absolute right-5 top-1/2 -translate-y-1/2"
             >
               {' '}
@@ -76,8 +76,8 @@ export default function DriverForm() {
           <Input
             type={'email'}
             placeholder={'Email'}
-            name="email"
-            id="email"
+            name={'email'}
+            id={'email'}
             className={
               'text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5'
             }
@@ -93,14 +93,14 @@ export default function DriverForm() {
           <Input
             type={'tel'}
             placeholder={'Phone Number'}
-            name="phone"
-            id="phone"
+            name={'phone_number'}
+            id={'phone_number'}
             className={
               'text-[#686868] placeholder:[#686868] border-[#F2F2F2] lg:py-[15px] px-5'
             }
           />
           <label
-            htmlFor="phone"
+            htmlFor="phone_number"
             className="absolute right-5 top-[15px]"
           >
             {' '}
