@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <form
-        name="contact"
+        name="contact2"
         netlify
         netlify-honeypot="bot-field"
         hidden

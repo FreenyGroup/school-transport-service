@@ -17,8 +17,8 @@ export default function DriverForm() {
       <h3 className="text-[28px] font-bold leading-[148%] font-nunito">
         Send A message
       </h3>
-      <form name="contact" method="post" className="mt-7">
-        <input type="hidden" name="form-name" value="contact" />
+      <form name="contact2" method="post" className="mt-7">
+        <input type="hidden" name="form-name" value="contact2" />
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
           <div className="relative">
             <Input
