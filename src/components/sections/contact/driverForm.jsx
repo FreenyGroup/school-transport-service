@@ -35,6 +35,7 @@ export default function DriverForm() {
         onSubmit={handleFormSubmit}
         className="mt-7"
       >
+        <input type="hidden" name="form-name" value="contact2" />
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
           <div className="relative">
             <Input
