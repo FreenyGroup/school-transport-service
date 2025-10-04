@@ -18,11 +18,7 @@ export default function DriverForm() {
         Send A message
       </h3>
       <form name="contact" method="post" className="mt-7">
-        <input
-          type="hidden"
-          name="form-name"
-          value="interested_driver"
-        />
+        <input type="hidden" name="form-name" value="contact" />
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
           <div className="relative">
             <Input
