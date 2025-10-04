@@ -1,3 +1,4 @@
+'use client';
 // components/FormA.jsx
 import {
   FaEnvelope,
