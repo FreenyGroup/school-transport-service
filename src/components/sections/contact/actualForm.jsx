@@ -58,9 +58,8 @@ export default function ActualForm() {
           </svg>
           <span class="sr-only">Info</span>
           <div class="ms-3 text-sm font-medium">
-            Thank you for your interest in driving with us! Your
-            message was succefully submitted, we will get back to you
-            withing 48-72 hours.{' '}
+            Your message was succefully submitted! We will get back to
+            you withing 48-72 hours.{' '}
           </div>
           <button
             type="button"
