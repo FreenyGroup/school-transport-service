@@ -18,7 +18,6 @@ export default function DriverForm() {
   const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [error, setError] = useState(null);
-  const [isVisible, setIsVisible] = useState(true);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -131,7 +130,7 @@ export default function DriverForm() {
           <button
             type="button"
             class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"
-            onClick={handleDismiss}
+            onClick={closeAlert}
             aria-label="Close"
           >
             <span class="sr-only">Close</span>
