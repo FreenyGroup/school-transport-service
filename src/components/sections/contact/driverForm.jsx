@@ -1,6 +1,6 @@
 'use client';
 // components/FormA.jsx
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import {
   FaEnvelope,
@@ -15,6 +15,7 @@ import SectionName from '@/components/ui/sectionName';
 import Title from '@/components/ui/title';
 
 export default function DriverForm() {
+  const formRef = useRef(null);
   const [status, setStatus] = useState(null);
   const [error, setError] = useState(null);
 
@@ -34,6 +35,7 @@ export default function DriverForm() {
       });
       if (res.status === 200) {
         setStatus('ok');
+        formRef.current?.reset();
       } else {
         setStatus('error');
         setError(`${res.status} ${res.statusText}`);
@@ -96,6 +98,7 @@ export default function DriverForm() {
       )}
       <form
         name="contact2"
+        ref={formRef}
         onSubmit={handleFormSubmit}
         className="mt-7"
       >
@@ -165,7 +168,7 @@ export default function DriverForm() {
           />
           <label
             htmlFor="phone_number"
-            className="absolute right-5 top-[15px]"
+            className="absolute right-5 top-[15px] -translate-y-1/2"
           >
             {' '}
             <FaPhone />
