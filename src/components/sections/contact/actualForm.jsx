@@ -145,6 +145,7 @@ export default function ActualForm() {
         onSubmit={handleFormSubmit}
         className="mt-7"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="relative">
           <Input
             type={'email'}
